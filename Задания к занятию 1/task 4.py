@@ -1,4 +1,4 @@
-
+# -- coding: utf-8 --
 seconds = int(input())
 days = seconds // (3600 * 24)
 hours = seconds // 3600
