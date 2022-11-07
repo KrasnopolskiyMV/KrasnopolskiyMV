@@ -1,3 +1,4 @@
+# -- coding: utf-8 --
 def spaceFigures(typeFigure):
     lenghtsFigure = []
     if typeFigure == 'Треугольник':
