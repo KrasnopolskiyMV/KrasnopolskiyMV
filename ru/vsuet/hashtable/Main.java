@@ -1,0 +1,24 @@
+package vsuet.hashtable;
+
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] args) {
+      HashTable<String, Integer> table = new HashTable();
+      table.put("\u044f\u0431\u043b\u043e\u043a\u043e", 10);
+      table.put("\u0431\u0430\u043d\u0430\u043d", 20);
+      table.put("\u0432\u0438\u0448\u043d\u044f", 30);
+      table.put("\u0434\u044b\u043d\u044f", 45);
+      table.put("\u0435\u0436\u0435\u0432\u0438\u043a\u0430", 50);
+      table.put("\u0444\u0438\u043d\u0438\u043a", 60);
+      System.out.println("\u0420\u0430\u0437\u043c\u0435\u0440 \u0445\u0435\u0448-\u0442\u0430\u0431\u043b\u0438\u0446\u044b: " + table.size());
+      System.out.println("\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0434\u043b\u044f '\u044f\u0431\u043b\u043e\u043a\u043e': " + table.get("\u044f\u0431\u043b\u043e\u043a\u043e"));
+      System.out.println("\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0434\u043b\u044f '\u0432\u0438\u0448\u043d\u044f': " + table.get("\u0432\u0438\u0448\u043d\u044f"));
+      table.remove("\u0431\u0430\u043d\u0430\u043d");
+      System.out.println("\u0420\u0430\u0437\u043c\u0435\u0440 \u0445\u0435\u0448-\u0442\u0430\u0431\u043b\u0438\u0446\u044b \u043f\u043e\u0441\u043b\u0435 \u0443\u0434\u0430\u043b\u0435\u043d\u0438\u044f: " + table.size());
+      System.out.println("\u0421\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u043b\u044e\u0447 '\u0431\u0430\u043d\u0430\u043d': " + table.containsKey("\u0431\u0430\u043d\u0430\u043d"));
+      table.put("\u0432\u0438\u043d\u043e\u0433\u0440\u0430\u0434", 70);
+      System.out.println("\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0434\u043b\u044f '\u0430\u0432\u043e\u043a\u0430\u0434\u043e': " + table.get("\u0430\u0432\u043e\u043a\u0430\u0434\u043e"));
+   }
+}
